@@ -1,0 +1,13 @@
+import Kitura
+import HeliumLogger
+
+let router = Router()
+HeliumLogger.use()
+
+router.get("/") { request, response, next in
+    response.send("Hello world")
+    next()
+}
+
+Kitura.addHTTPServer(onPort: 8080, with: router)
+Kitura.run()
