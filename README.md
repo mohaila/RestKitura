@@ -79,7 +79,12 @@ The server log for each request:
 - Add a new module Application with all the logic and that can be easily tested.
 - RestKitura depends only on Application
 - Add /health route
+<p align="center">
+<img src="Screenshots/health.png" height="100" alt="health">
+
 - Add a monitoring dashboard at /swiftmetrics-dash
+<p align="center">
+<img src="Screenshots/swiftmetrics-dash.png" height="100" alt="dashboard">
 
 ## TODO
 - Add models
