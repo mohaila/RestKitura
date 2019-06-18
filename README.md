@@ -2,7 +2,7 @@
 
 A Simple REST server using Swift 5.0.1 on Ubuntu 18.04.
 
-## Steps to get started with Kitura:
+## Step 1: Steps to get started with Kitura:
 0. Install swift 5.0.1 for ubuntu 18.04 and all required prerequisites. For more information, visit [www.kitura.io](http://www.kitura.io).
 1. Generate an executable project using the commands: 
 ```bash
@@ -74,6 +74,13 @@ The server log for each request:
 [2019-06-13T11:35:18.597-04:00] [VERBOSE] [HTTPServerRequest.swift:333 parsingCompleted()] HTTP request from=192.168.56.102; proto=http;
 [2019-06-13T11:40:36.725-04:00] [VERBOSE] [HTTPServerRequest.swift:333 parsingCompleted()] HTTP request from=127.0.0.1; proto=http;
 ```
+
+## Step 2: Application refactoring
+- Add a new module Application with all the logic and that can be easily tested.
+- RestKitura depends only on Application
+- Add /health route
+- Add a monitoring dashboard at /swiftmetrics-dash
+
 ## TODO
 - Add models
 - Add CRUD routes
